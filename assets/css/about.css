@@ -14,7 +14,7 @@ h3 {
   text-align: left;
 }
 
-.dark {
+.met_dark {
   background-color: var(--primary-color-background);
   color: var(--second-text-color);
   font-family: 'Gudea', sans-serif;
@@ -22,7 +22,7 @@ h3 {
   font-size: 1.2em;
 }
 
-.light {
+.met_light {
   background-color: var(--fourth-color-background);
   color: var(--text-description-color);
   font-family: 'Gudea', sans-serif;
@@ -30,31 +30,34 @@ h3 {
   font-size: 1em;
 }
 
-.dark, .light p {
+.met_dark, .met_light p {
   text-align: justify;
+  font-size: 1.2em;
 }
-.light h1, h3 {
+
+.met_dark h1 {
+  color: var(--title-color-light);
+}
+
+.met_light h1, h3 {
   color: var(--title-color-dark);
 }
 
-.light a {
+.met_light a {
   color: var(--third-color-background);
   font-weight: bolder;
 }
 
-.flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.logo {
-  padding-top: 1.5em;
-  max-width: 10em;
-}
-
-.logo img {
-  max-width: 100%;
+.met_logo {
   min-height: 100%;
+} 
+
+.met_logo img {
+  max-width: 100%;
 }
 
+.met_vertical_align {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
